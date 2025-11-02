@@ -25,19 +25,19 @@
    
     <section class="hero hero-cadastro">
         <div class="hero-content">
-            <h1>Cadastre-se como Voluntário</h1>
-            <p>Junte-se a nós e faça a diferença na vida de muitas pessoas através do voluntariado.</p>
+            <h1>Junte-se a nossa rede de apoio</h1>
+            <p>Junte-se a nós e faça a diferença na vida de muitas pessoas através da sua doação.</p>
         </div>
     </section>
 
     <!-- Formulário de Cadastro -->
     <main>
         <section class="signup-section">
-            <h2>Cadastro de Voluntários</h2>
+            <h2>Cadastro de apoiadores</h2>
           <div class="success-message" id="successMessage">
                 ✅ Cadastro realizado com sucesso! Entraremos em contato em breve.
             </div>
-            <form id="volunteerForm" onsubmit="handleSubmit(event)">
+            <form id="supporterForm" onsubmit="handleSubmit(event)">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <div class="form-group">
@@ -59,43 +59,54 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Disponibilidade</legend>
+                    <legend>Contribuição</legend>
                     <div class="form-group">
-                        <label for="disponibilidade">Quando você pode ajudar? *</label>
+                        <label for="disponibilidade">Selecione o seu banco *</label>
                         <select id="disponibilidade" name="disponibilidade" required>
-                            <option value="">Selecione...</option>
-                            <option value="fins-de-semana">Fins de semana</option>
-                            <option value="dias-uteis">Dias úteis</option>
-                            <option value="flexivel">Horário flexível</option>
-                            <option value="pontual">Ações pontuais</option>
+                            <option value="" >Selecione...</option>
+                            <option value="fins-de-semana">Banco Bradesco</option>
+                            <option value="dias-uteis">Banco do Brasil</option>
+                            <option value="flexivel">Banco Itaú</option>
+                            <option value="pontual">Banco Santander</option>
+                            <option value="pontual">Banco Nubank</option>
+                            <option value="pontual">Caixa Econômica Federal</option>
+                            <option value="pontual">Banco Inter</option>
+                            <option value="pontual">C6 Bank</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="area-interesse">Área de Interesse *</label>
+                        <label for="area-interesse">Quanto quer doar *</label>
                         <select id="area-interesse" name="area-interesse" required>
                             <option value="">Selecione...</option>
-                            <option value="distribuicao-alimentos">Distribuição de Alimentos</option>
-                            <option value="educacao">Educação e Capacitação</option>
-                            <option value="saude">Apoio à Saúde</option>
-                            <option value="administrativo">Apoio Administrativo</option>
-                            <option value="qualquer">Qualquer área</option>
+                            <option value="distribuicao-alimentos">R$5,00</option>
+                            <option value="educacao">R$10,00</option>
+                            <option value="saude">R$25,00</option>
+                            <option value="administrativo">R$50,00</option>
+                            <option value="qualquer">R$100,00</option>
+                            <option value="qualquer">R$250,00</option>
+                            <option value="qualquer">R$500,00</option>
+                            <option value="qualquer">R$1000,00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="area-interesse">Nome completo*</label>
+                        <input type="text" required placeholder="Digite o nome impresso no cartão">
+                        <label for="area-interesse">Número do cartão *</label>
+                        <input type="text" name="cardNumber" id="cardNumber" maxlength="19" required placeholder="0000 0000 0000 0000">
+                        <label for="area-interesse">Conta *</label>
+                        <input type="text" name="accountNumber" id="accountNumber" maxlength="14" placeholder="00000000000000">
+                        <label for="area-interesse">Dígito verificador *</label>
+                        <input type="text" name="agencyNumber" id="agencyNumber" maxlength="1" required placeholder="0">
+                        <label for="area-interesse">Validade *</label>
+                        <input type="text" name="validityDateCard" id="validityDateCard" maxlength="5" required placeholder="00/00">
+                        <label for="area-interesse">Código de segurança *</label>
+                        <input type="text" id="SecurityCode" maxlength="3" required placeholder="000">
+                            
                         </select>
                     </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Informações Adicionais</legend>
-                    <div class="form-group">
-                        <label for="experiencia">Você já participou de ações voluntárias antes?</label>
-                        <textarea id="experiencia" name="experiencia" placeholder="Conte-nos sobre sua experiência..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="motivacao">Por que você quer ser voluntário?</label>
-                        <textarea id="motivacao" name="motivacao" placeholder="Compartilhe sua motivação..."></textarea>
-                    </div>
-                </fieldset>
-
-                <button type="submit" class="btn-primary">Enviar Cadastro</button>
+                <button type="submit" class="btn-primary">Contribuir</button>
             </form>
            <!-- Lista de Voluntários Cadastrados -->
             <section class="voluntarios-lista">

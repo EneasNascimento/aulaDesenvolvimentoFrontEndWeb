@@ -1,53 +1,105 @@
-<!DOCTYPE html> <!-- define o html 5 -->
-<html lang="pt-BR"> <!-- define o idioma a ser usado -->
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
 <head>
-    <meta charset="UTF-8"> <!-- reconhece caracteres especiais -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- deixa a tela resposiva e se adequa a qualquer tela -->
-    <title>Cadastro de usuário / Cruzeiro do Sul</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Volunteer - home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1> Usuário </h1>
         <nav> <!-- Menu de navegação-->
-            <ul> <!-- Cria uma uma lista ordenada-->
-                <li> <a href="index.html">Início</a></li> <!-- Itens da Lista-->
+            <div class="logo">REDE VOLUNTEER</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu"> <!-- Cria uma uma lista não ordenada-->
+                <li> <a href="index.html" class="active">Início</a></li> <!-- Itens da Lista-->
                 <li> <a href="projeto.html">Projeto</a></li>
-                <li> <a href="cadastro.html">Cadastro</a></li>
+                <li> <a href="cadastro.html">Seja voluntário</a></li>
+                <li> <a href="doar.html">Seja um apoiador</a></li>
+                <li> <a href="blog.html">Newsletter</a></li>
             </ul> 
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Quem Somos</h2>
-            <p>Somos uma organização sem fins lucrativos, que ajuda casas de recuperação de dependentes químicos.</p>
-            <img src="imagens/equipe.jpg" alt="Equipe em ação" width="660" height="450">
-        </section>
 
-        <section>
-            <h2>Missão da ONG</h2>
-            <p>
-                Nossa missão é promover a recuperação, a reintegração social e a melhoria da qualidade de vida dos induvíduos afetados pela
-                dependência química, por meio de acolhimento humanizado, tratamento teratêutico e apoio às suas famílias.
-            </p>
-            <p>
-                Nosso principal objetivo é oferecer um ambiente seguro e de acolhimento para os dependentes químicos, fornecendo tratamento especializado
-                 e multidisciplinar para auxiliar na superação do vício e na construção de um novo projeto de vida, com dignidade e autonomia.
-            </p>
-        </section>
-        <section>
-            <h2>Nosso Contato</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme Vidas com Voluntariado</h1>
+            <p>Somos uma organização dedicada à inclusão, ressocialização social e ao atendimento de famílias. Junte-se a nós e faça a diferença!</p>
+            <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
+        </div>
+    </section>
+<br>
+    <!-- Quem Somos -->
+    <section class="about">
+        <h2>Quem Somos</h2>
+        <p>Somos uma organização sem fins lucrativos que atua no atendimento de famílias com depentendes químicos, promovendo a inclusão social, dignidade, esperança e oportunidades para quem mais precisa.</p>
+        
+    </section>  
+<br>
+    <!-- Nossa missão-->
+     <section class="mission">
+        <h2>Nossa missão</h2>
+        <p>
+            Nossa missão é promover a recuperação, a reintegração social e a melhoria da qualidade de vida dos induvíduos afetados pela
+            dependência química, por meio de acolhimento humanizado, tratamento teratêutico e apoio às suas famílias.
+        </p>
+        <p>
+            Nosso principal objetivo é oferecer um ambiente seguro e de acolhimento para os dependentes químicos, fornecendo tratamento especializado
+             e multidisciplinar para auxiliar na superação do vício e na construção de um novo projeto de vida, com dignidade e autonomia.
+        </p>
+     </section>
+<br>
+    <!-- Nossas conquistas-->
+     <section class="achievement">
+        <h2>Nossas conquistas</h2><br>
+        <h4> A força da nossa rede de apoio</h4><br>
+        <p>
+            A Volunteer nasceu com o propósito de transformar vidas e oferecer novas oportunidades para quem mais precisa. Em nossa jornada, aprendemos que nenhum grande resultado acontece sozinho. Por isso, valorizamos profundamente cada parceria, cada gesto e cada apoio que recebemos ao longo de nossa história.
+        </p><br>
+        <p>
+            Hoje, nossas unidades conseguem alcançar uma média de <strong>ressocialização de 16 a cada 20 internos</strong>, oferecendo acolhimento, tratamento e uma nova perspectiva para dependentes químicos. Este resultado não representa apenas números — ele representa vidas reconstruídas, famílias reunidas e esperanças renovadas.
+        </p><br>
+        <p>
+            Nada disso seria possível sem a colaboração direta da nossa rede de apoio. Instituições como <strong>Crefisa, Meta, Google, Morbumdi</strong>, entre outras, acreditaram em nosso compromisso antes mesmo de sermos reconhecidos nacionalmente. Elas caminham conosco nos bastidores, fornecendo suporte essencial para que nossa missão siga firme e em constante expansão.
+        </p><br>
+        <p>
+            Foi com essa união de esforços que, em <strong>maio de 2020</strong>, celebramos nossa maior conquista até aqui: <strong>o prêmio ONG Awards</strong>. Um reconhecimento que simboliza não apenas o trabalho da Volunteer, mas a força da coletividade quando o bem é colocado como prioridade.
+        </p><br>
+        <p>
+            Seguimos honrados, motivados e ainda mais conscientes de que grandes vitórias se constroem juntos.
+        </p>
+        <p>À nossa rede de apoio e a todos que acreditam na transformação social: <strong>nossa eterna gratidão.</strong>
+        </p><br>
+        <p>
+            Juntos, seguimos voluntários da vida. 💛
+        </p><br>
+     </section>
+     <section>
+        <div>
+            <center>
+                <img src="Imagens/equipeVolunteer.jpg" width="750">
+            </center>
+        </div>
+     </section><br>]
+     
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rede Volunteer. Todos os direitos reservados.</p>
+     <p>Feito para transformar vidas</p>
+     <section>
+            
             <address>
                 <p>Endereço: Rua Sapucaia de Nóbrega, 151 - Bairro Novo Horizonte - São Paulo/SP</p>
-                <p>Telefone: (11) 3954-5858</p>
-                <p>Email: contato@novaesperanca.com.br</p>
+                <p>Telefone: (11) 9999-9999</p>
+                <p>Email: contato@volunteer.org.br</p>
 
             </address>
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 ONG Nova Esperança</p>
     </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>
