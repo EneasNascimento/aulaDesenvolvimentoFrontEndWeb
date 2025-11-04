@@ -75,7 +75,7 @@ nav a {
    Hero Section - Index
    ========================== */
 .hero {
-    background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
+    background: linear-gradient(rgba(89, 105, 168, 0.8), rgba(62, 34, 90, 0.8)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/></svg>');
     background-size: cover;
     background-position: center;
@@ -85,12 +85,12 @@ nav a {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 
 .hero-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3e4c86 0%, #764ba2 100%);
     padding: 8rem 2rem 4rem;
     text-align: center;
     color: white;
